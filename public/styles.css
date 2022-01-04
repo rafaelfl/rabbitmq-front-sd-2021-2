@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    height: -webkit-fill-available; /* We have to fix html height */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* Disable Android highlight */
+}
+
+body {
+    font-size: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.alert-box {
+    display: block;
+    width: max(60%, 500px);
+    height: 500px;
+    background-color: #eea2a2;
+    border-radius: 20%;
+    box-shadow: 0 10px 20px rgba(64, 64, 64, 0.15);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.alert-box div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Lilita One', cursive;
+}

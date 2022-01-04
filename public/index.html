@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens de alerta</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="alertBox" name="alertBox" class="alert-box">
+            <div id="alertMsg" name="alertMsg"></div>
+        </div>
+    </div>
+</body>
+    <script>
+        const HOST = location.origin.replace(/^http/, 'ws')
+        var socket = new WebSocket(HOST);
+
+        socket.onopen = function() {
+            console.log("Conectado ao servidor websocket!");
+        }
+
+        socket.onmessage = function({ data }) {
+            var msg = data.toString();
+
+            const alertBox = document.getElementById("alertBox");
+            const alertMsg = document.getElementById("alertMsg");
+            alertMsg.textContent = msg;
+
+            alertBox.classList.toggle("visible");
+
+            setTimeout(() => {
+                alertMsg.textContent = "";
+                alertBox.classList.toggle("visible");
+            }, 4000);
+        }
+    </script>
+</html>
