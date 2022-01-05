@@ -1,8 +1,8 @@
 const express = require('express');
 require('dotenv').config();
 
-const PORT = process.env.PORT || 'localhost';
-const BROKER_ADDRESS = process.env.BROKER_ADDRESS || 3000;
+const PORT = process.env.PORT || 3000;
+const BROKER_ADDRESS = process.env.BROKER_ADDRESS || 'localhost';
 const INDEX = 'public/index.html';
 
 const { startWebSocketServer, sendMessageToClients } = require('./src/websocketServer');
