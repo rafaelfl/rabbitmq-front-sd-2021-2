@@ -4,24 +4,23 @@
 
 ## Sobre
 
-<p align="center">Pequeno projeto com finalidade educacional desenvolvido para apresentar os conceitos de mensageria com o *middleware* RabbitMQ para a disciplina de Sistemas Distribuídos (2021.2) do curso de Engenharia da Computação - UFMA.</p>
+<p align="center">Pequeno projeto com caráter educacional desenvolvido para apresentar os conceitos de mensageria com o *middleware* RabbitMQ para a disciplina de Sistemas Distribuídos (2021.2) do curso de Engenharia da Computação - UFMA.</p>
 
 
 ## Tabela de conteúdos
 =================
-<!--ts-->
+
    * [Sobre](#sobre)
    * [Tabela de conteúdos](#tabela-de-conteúdos)
-   * [Descrição do Projeto](#descrição-do-projeto)
-   * [Pré requisitos](#pre-requisitos)
-   * [Instalação](#instalação)
-   * [Tecnologias](#tecnologias)
-   * [Autor](#autor)
-<!--te-->
+   * [Descrição do Projeto](#-descrição-do-projeto)
+   * [Pré-requisitos](#prerequisitos)
+   * [Instalação](#-instalação)
+   * [Tecnologias](#-tecnologias)
+   * [Autor](#-autor)
 
 ---
 
-## 💻 Descrição do Projeto
+## 💻 Descrição do Projeto 
 
 O projeto consiste em um *marketplace* simples de pedidos de pizzas que utiliza uma arquitetura distribuída baseada no uso do middleware de mensageria RabbitMQ, no qual há dois subsistemas principais: (a) o módulo de "Submissão de pedidos" e (b) o módulo da "Pizzaria".
 
@@ -39,7 +38,8 @@ A arquitetura do sistema do sistema, conforme descrito, pode ser vista na figura
 
 ---
 
-## ⚙️ Pré requisitos
+<a name="prerequisitos"></a>
+## ⚙️ Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado um *broker* RabbitMQ em algum endereço. Recomendo utilizar um *container* Docker, que pode ser instalado por meio do seguinte comando (considerando a última versão até o momento):
 
@@ -79,7 +79,7 @@ Caso você necessite reiniciar o servidor web, não esqueça de atualizar a pág
 
 ---
 
-### 🛠 Tecnologias
+## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -96,7 +96,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="https://github.com/rafaelfl/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/31193433?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Prof. Rafael Fernandes Lopes</b></sub></a>
+ <sub><b>Prof. Dr. Rafael Fernandes Lopes</b></sub></a>
 
 
 Feito com 💜 por Rafael Fernandes Lopes
