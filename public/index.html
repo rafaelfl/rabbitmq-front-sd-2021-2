@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagens de alerta</title>
+    <title>Alerta de pedido de pizza</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
+        <h3>Painel de notificação de pedidos</h3>
         <div id="alertBox" name="alertBox" class="alert-box">
             <div id="alertMsg" name="alertMsg"></div>
         </div>
@@ -22,19 +23,22 @@
             console.log("Conectado ao servidor websocket!");
         }
 
+        // Quando receber uma mensagem do servidor...
         socket.onmessage = function({ data }) {
             var msg = data.toString();
 
+            // exibe a mensagem recebida no alertBox
             const alertBox = document.getElementById("alertBox");
             const alertMsg = document.getElementById("alertMsg");
             alertMsg.textContent = msg;
 
-            alertBox.classList.toggle("visible");
+            alertBox.classList.add("visible");
 
+            // a mensagem exibida será exibida por 10 segundos
             setTimeout(() => {
-                alertBox.classList.toggle("visible");
+                alertBox.classList.remove("visible");
                 alertMsg.textContent = "";
-            }, 4000);
+            }, 10000);
         }
     </script>
 </html>
