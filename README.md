@@ -68,9 +68,11 @@ $ yarn install
 # Execute o módulo pizzaria
 $ yarn start
 
-# O servidor web/websocket iniciará por padrão na porta:8080 e as filas serão acessadas no endereço de localhost
+# O servidor web/websocket iniciará por padrão na porta:8080 e as filas serão
+# acessadas no endereço de localhost
 
-# Acesse <http://localhost:8080> - você verá uma página inicialmente em branco - ao receber um pedido de pizza uma caixa será exibida no meio da tela
+# Acesse <http://localhost:8080> - você verá uma página inicialmente em branco -
+# ao receber um pedido de pizza uma caixa será exibida no meio da tela
 ```
 
 Para visualizar visualizar os pedidos, é necessário executar o módulo de submissão de pedidos disponível no repositório [Rabbit Pizza (módulo Submissão)](https://github.com/rafaelfl/rabbitmq-sd-2021-2). Ao utilizar a ferramenta para enviar pedidos de pizzas, você verá a caixa de notificação sendo exibida no seu navegador.
