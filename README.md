@@ -4,7 +4,7 @@
 
 ## Sobre
 
-<p align="center">Pequeno projeto com caráter educacional desenvolvido para apresentar os conceitos de mensageria com o *middleware* RabbitMQ para a disciplina de Sistemas Distribuídos (2021.2) do curso de Engenharia da Computação - UFMA.</p>
+<p align="center">Pequeno projeto com caráter educacional desenvolvido para apresentar os conceitos de mensageria com o *middleware* RabbitMQ para a disciplina de Sistemas Distribuídos (2021.2) do curso de Engenharia da Computação - UFMA. </p>
 
 
 ## Tabela de conteúdos
