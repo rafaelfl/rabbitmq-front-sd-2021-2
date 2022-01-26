@@ -41,7 +41,7 @@ amqp.connect(`amqp://${BROKER_ADDRESS}`, (err0, conn) => {
             const pedido = JSON.parse(msg.content.toString());
 
             console.log(pedido);
-            sendMessageToClients(wss, `ALERTA: PEDIDO DE UMA PIZZA ${pedido.sabor}, PARA ENTREGA NO ENDEREÇO ${pedido.endereco}`);
+            sendMessageToClients(wss, `ALERT: ORDER OF A PIZZA WITH FLAVOR ${pedido.sabor}, TO BE DELIVERED AT ${pedido.endereco}`);
         }, {
             noAck: true,
         });
