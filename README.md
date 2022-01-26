@@ -87,8 +87,8 @@ If you need to restart the web server, don't forget to refresh the page (since i
     <td>Alert page</td>
   </tr>
   <tr>
-    <td><img src="resources/start-page.png" width=250></td>
-    <td><img src="resources/alert-page.png" width=250></td>
+    <td><img src="resources/start-page.png" width=350></td>
+    <td><img src="resources/alert-page.png" width=350></td>
   </tr>
  </table>
 
